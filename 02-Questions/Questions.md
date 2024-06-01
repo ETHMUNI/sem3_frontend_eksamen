@@ -17,7 +17,8 @@ What is JSX? Provide an example.
 * JSX står for JavaScript XML. Det er en udvidelse af JavaScript, der tillader os at skrive HTML-lignende kode direkte i JavaScript-filer
 * Du kan tage et hvert .jsx fil som eksempel fra eksamensprojektet eller brug dette:
 
-```import React from 'react';
+```
+import React from 'react';
 
 function MyComponent() {
   return (
