@@ -1,9 +1,10 @@
-Question 4
-JS
-. Explain the concept of promises in JavaScript. How do they differ from callbacks?
+# **Question 4**
+## **JS**
+### **Explain the concept of promises in JavaScript. How do they differ from callbacks?**
 
-REACT
-. Explain the following code:
+## **REACT**
+### **Explain the following code:**
+```
 import React, { useState, useEffect } from 'react';
 const ErrorBoundary = ({ children }) => {
  const [hasError, setHasError] = useState(false);
@@ -29,7 +30,6 @@ const MyComponent = () => {
  </ErrorBoundary>
  );
 };
-
-Security/Routing/Styling
-. Describe some important design principles when developing a website that should be working well on
-mobile, tablet, as well as desktop browsers.
+```
+## **Security/Routing/Styling**
+### **Describe some important design principles when developing a website that should be working well on mobile, tablet, as well as desktop browsers.**
