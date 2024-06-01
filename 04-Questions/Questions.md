@@ -6,6 +6,7 @@
 ### **Explain the following code:**
 ```
 import React, { useState, useEffect } from 'react';
+
 const ErrorBoundary = ({ children }) => {
   const [hasError, setHasError] = useState(false);
 
