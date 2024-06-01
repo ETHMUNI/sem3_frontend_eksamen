@@ -17,7 +17,7 @@
       return <div>Hello!</div>
     }
 
-### **Explain the benefits of using components compared to how you would build a web application invanilla javascript.**
+### **Explain the benefits of using components compared to how you would build a web application in vanilla javascript.**
 
 React Komponenter: 
    * Genanvendelige: F.eks. Hvis du laver en knap-komponent, kan du bruge den samme knap på forskellige sider eller dele af din app uden at kopiere og indsætte koden
