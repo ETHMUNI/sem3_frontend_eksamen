@@ -1,6 +1,7 @@
 Question 2
 
 JS
+
 What is a callback function in JavaScript and when would you use one?
 
 * En callback-funktion er en funktion, der sendes som et argument til en anden funktion og kaldes senere, når en bestemt opgave er færdig
@@ -12,6 +13,7 @@ For eksempel:
   * Event Handling
 
 REACT
+
 What is JSX? Provide an example.
     
 * JSX står for JavaScript XML. Det er en udvidelse af JavaScript, der tillader os at skrive HTML-lignende kode direkte i JavaScript-filer
