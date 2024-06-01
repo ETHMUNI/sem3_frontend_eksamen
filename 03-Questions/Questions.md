@@ -54,9 +54,11 @@ Kort opsumering af deployment:
 Part 1: Forberedelse og Backend
   1. Opret en Dockerfil for backend og opsæt GitHub Actions (build.yml) til at bygge og pushe Docker image til Docker Hub.
   2. Opsæt en DigitalOcean droplet med Docker og Docker Compose.
+
 Part 2: Frontend Deployment
   1. Opret en Dockerfil for frontend, byg image, og brug GitHub Actions til at pushe til Docker Hub.
   2. Opsæt en Docker Compose fil på droplet for at køre frontend og backend services.
+
 Part 3: Traefik Setup
   1. Konfigurer Traefik som reverse proxy på droplet.
   2. Opret nødvendige filer og mapper (acme.json, .env, docker-compose.yml).
