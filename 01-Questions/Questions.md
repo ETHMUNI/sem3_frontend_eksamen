@@ -1,10 +1,10 @@
-Question 1
+# **Question 1**
 
-JS
-What are higher-order functions in JavaScript? Give an example.
+## **JS**
+### **What are higher-order functions in JavaScript? Give an example.**
 
-REACT
-What is a React component?
+## **REACT**
+### **What is a React component?**
 * Et React komponent er en genanvendelig kode der definerer, hvordan en del af brugergrænsefladen(UI) skal se ud og opfører sig. Hver komponent har typisk sin egen logik og state, og det
     kan tage et parameter/argument kaldet props. Et React komponent returnere elementer, som beskriver, hvad der skal vises på skærmen.
 
@@ -17,8 +17,8 @@ What is a React component?
       return <div>Hello!</div>
     }
 
-Explain the benefits of using components compared to how you would build a web application in
-vanilla javascript.
+### **Explain the benefits of using components compared to how you would build a web application in
+vanilla javascript.**
 
 React Komponenter: 
    * Genanvendelige: F.eks. Hvis du laver en knap-komponent, kan du bruge den samme knap på forskellige sider eller dele af din app uden at kopiere og indsætte koden
@@ -33,15 +33,15 @@ Vanilla JavaScript:
 
 
 
-Security/Routing/Styling
-Explain what React Router is and its purpose in a React application.
+## **Security/Routing/Styling**
+### **Explain what React Router is and its purpose in a React application.**
 
 * React Router er et populært bibliotek til styring af routing i React-applikationer.
 * React Router gør det muligt at vise forskellige komponenter afhængigt af, hvilken URL brugeren besøger
 * Det betyder, at når brugeren skriver en bestemt URL i adresselinjen viser React Router den rigtige komponent eller side uden at genindlæse siden.
     
 
-Show an example of how routing works in React.
+### **Show an example of how routing works in React.**
     
 * For at finde Routing i Projektet gå src -> App.jsx
     Linje 29 til Linje 44:
