@@ -64,7 +64,7 @@ Part 3: Traefik Setup
   2. Opret nødvendige filer og mapper (acme.json, .env, docker-compose.yml).
   3. Start services med docker-compose up -d.
 
-Ekstra forklaringer:
+## **Ekstra forklaringer:**
 
 Docker:
 * Docker Image: indeholder alt, hvad der er nødvendigt for at køre en applikation, inklusiv kode, runtime, biblioteker og indstillinger. Man bruger et image til at skabe containere. Tænkt på det som en fast skabelon med alt, hvad en applikation behøver
