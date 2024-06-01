@@ -1,6 +1,6 @@
-**Question 2
+**Question 2**
 
-JS**
+**JS**
 
 **What is a callback function in JavaScript and when would you use one?**
 
@@ -12,9 +12,9 @@ For eksempel:
   * Timers
   * Event Handling
 
-**REACT
+**REACT**
 
-What is JSX? Provide an example.**
+**What is JSX? Provide an example.**
     
 * JSX står for JavaScript XML. Det er en udvidelse af JavaScript, der tillader os at skrive HTML-lignende kode direkte i JavaScript-filer
 * Du kan tage et hvert .jsx fil som eksempel fra eksamensprojektet eller brug dette:
@@ -38,6 +38,6 @@ function MyComponent() {
 * JSX-koden er indlejret i en JavaScript-funktion
 * JSX tillader at blande JavaScript og HTML-lignende syntaks.
 
-**Security/Routing/Styling
-Describe the purpose of flexbox and grid in css, and show some examples of what can be
+**Security/Routing/Styling**
+**Describe the purpose of flexbox and grid in css, and show some examples of what can be
 achieved by applying them.**
