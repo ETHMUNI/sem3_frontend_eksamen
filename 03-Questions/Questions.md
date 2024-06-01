@@ -50,6 +50,7 @@ Hej, Bob!
 ### **Describe conceptually how we deploy a React frontend application to a docker container on a virtual machine.**
 
 Kort opsumering af deployment:
+
 Part 1: Forberedelse og Backend
   1. Opret en Dockerfil for backend og opsæt GitHub Actions (build.yml) til at bygge og pushe Docker image til Docker Hub.
   2. Opsæt en DigitalOcean droplet med Docker og Docker Compose.
@@ -62,6 +63,7 @@ Part 3: Traefik Setup
   3. Start services med docker-compose up -d.
 
 Ekstra forklaringer:
+
 Docker:
 * Docker Image: indeholder alt, hvad der er nødvendigt for at køre en applikation, inklusiv kode, runtime, biblioteker og indstillinger. Man bruger et image til at skabe containere. Tænkt på det som en fast skabelon med alt, hvad en applikation behøver
 * Docker Container: En kørende instans af et Docker image. Fungerer som en lille, isoleret virtuel maskine, der kører en applikation, ergo en kørende version af skabelonen.
