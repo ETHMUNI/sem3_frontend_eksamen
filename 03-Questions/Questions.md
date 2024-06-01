@@ -5,16 +5,16 @@
 
 package.json
 Formål:
-    * En liste over de værktøjer og biblioteker, dit projekt har brug for.
-    * Bruges til at fortælle hvilke packages og scripts der skal installeres, når nogen bruger dit projekt.
+   * En liste over de værktøjer og biblioteker, dit projekt har brug for.
+   * Bruges til at fortælle hvilke packages og scripts der skal installeres, når nogen bruger dit projekt.
 
 package-lock.json
 Formål: 
-    * En detaljeret liste, der præcist viser hvilke versioner af pakkerne, der er installeret.
-    * Sikrer, at alle, der bruger dit projekt, får de samme pakker i de samme versioner, så der ikke opstår uventede problemer.
+   * En detaljeret liste, der præcist viser hvilke versioner af pakkerne, der er installeret.
+   * Sikrer, at alle, der bruger dit projekt, får de samme pakker i de samme versioner, så der ikke opstår uventede problemer.
 
 Forklaret i "ikke-kode" termer:
-    * Se package.json som en indkøbsliste med fleksible valg, mens package-lock.json er som en kvittering, der viser præcis, hvad der blev købt
+   * Se package.json som en indkøbsliste med fleksible valg, mens package-lock.json er som en kvittering, der viser præcis, hvad der blev købt
 
 ## **REACT**
 ### **Describe the purpose of props in React.**
