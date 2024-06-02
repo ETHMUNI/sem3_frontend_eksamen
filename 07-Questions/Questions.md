@@ -51,9 +51,8 @@ Kig på addRecipes.jsx:
 
 Form submit events:
 * Form submit events håndteres med en handleSubmit funktion, der kaldes, når brugeren trykker på "submit" knappen. I koden ovenfor er handleSubmit defineret på linje 31 og bruges på linje 53.
-Eksempel:
 * Når brugeren indsender formularen, kaldes handleSubmit, tilføjer opskriften og navigere til en anden side
-
+Eksempel:
 ```
 const handleSubmit = async (e) => {
   e.preventDefault();
@@ -77,10 +76,9 @@ const handleSubmit = async (e) => {
 ```
 Input change events:
 * Input change events håndteres med en handleChange funktion, der opdaterer komponentens state, når brugeren ændrer værdier i inputfelter. handleChange funktionen er defineret på linje 20 og bruges i flere inputfelter.
-Eksempel:
 * Når brugeren skriver i et inputfelt, kaldes handleChange for at opdatere state med den nye værdi for opskriftens titel, kategori, ingredienser og instruktioner
 * Bemærk at der bruges spread operator(...recipes). Dette skaber en kopi af det nuværende recipe objekt. Dette sikrer, at vi ikke direkte muterer det eksisterende state, hvilket er vigtigt i React for at bevare state-håndteringen korrekt
-
+Eksempel:
 ```
 const handleChange = (e) => {
   setRecipe({ ...recipe, [e.target.id]: e.target.value });
@@ -97,6 +95,8 @@ const handleChange = (e) => {
 3. Hvis brugeren godkendes, sender serveren et JWT(JSON Web Token) tilbage
 4. Opbevar JWT'et i vores local storage for at bruge det til autentificeret HTTP-anmodninger til vores endpoints fremover
 5. Inkluder JWT i vores headers på fremtidige HTTP-anmodninger for at få adgang til beskyttede API'er, såsom vores endpoints.
+
+Ekstra:
 * Headers: I vores tilfælde i adminapi.js bruger vi kun Request headers og ingen Response headers.
   * `'Authorization': `Bearer ${token}'` - bruges i alle funktioner til at sende JWT for autentificering.
   * `'Content-Type': 'application/json'` - bruges i getAllUsers, deleteUser, addRoleToUser, deleteComment, og deleteRecipe til at angive, at body'en er i JSON-format
