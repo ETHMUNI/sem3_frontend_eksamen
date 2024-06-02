@@ -98,6 +98,6 @@ const handleChange = (e) => {
 
 Ekstra:
 * Headers: I vores tilfælde i adminapi.js bruger vi kun Request headers og ingen Response headers.
-  * `'Authorization': `Bearer ${token}'` - bruges i alle funktioner til at sende JWT for autentificering.
+  * `'Authorization': Bearer ${token}'` - bruges i alle funktioner til at sende JWT for autentificering.
   * `'Content-Type': 'application/json'` - bruges i getAllUsers, deleteUser, addRoleToUser, deleteComment, og deleteRecipe til at angive, at body'en er i JSON-format
   * `'Cache-Control': 'no-cache'` - Cache-Control: Bruges i getAllUsers til at instruere serveren om ikke at cache anmodningen. Dette betyder, at du instruerer serveren om at sikre, at dataene er opdaterede og ikke blot sende en gammel, cachet version.
