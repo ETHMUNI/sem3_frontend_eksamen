@@ -10,6 +10,7 @@
 ## **REACT**
 ### **Explain the following code:**
 **Vær opmærksom på at koden nedenunder er det tilføjet kommentarer på**
+
 Forklaring på ErrorBoundary-komponentet:
 * Formål: Fange og håndtere fejl i children komponenterne, så applikationen ikke går ned.
 * useState: Opretter en state-variabel hasError, der starter som false.
