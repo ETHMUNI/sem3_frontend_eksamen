@@ -34,4 +34,4 @@ Brug App.jsx og Navbar.jsx for at vise et eksempel.
 * App.jsx: Hovedkomponenten, der bruger Router til at definere ruterne for applikationen. Routes og Route komponenterne bruges til at definere, hvilken komponent der skal vises for hver rute.
 * Navbar.jsx: Indeholder navigationsmenuen med links til forskellige sider. Links er implementeret ved hjælp af `<Link>` komponenten fra react-router-dom
   * `<Link>`- Når man klikker på et <Link>, ændres URL'en i browseren uden at genindlæse siden, hvilket gør navigationen hurtigere og mere effektiv. Dette kaldes "client-side routing".
-  * Når en bruger klikker på et link i vores navigation bar, som bruger <Link>, ændres URL'en. Router fanger denne ændring og opdaterer visningen ved at renderere den relevante komponent, som er defineret i Routes
+  * Når en bruger klikker på et link i vores navigation bar, som bruger `<Link>`, ændres URL'en. Router fanger denne ændring og opdaterer visningen ved at renderere den relevante komponent, som er defineret i `<Routes>`.
