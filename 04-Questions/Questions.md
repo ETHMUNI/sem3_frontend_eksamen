@@ -9,7 +9,7 @@
 
 ## **REACT**
 ### **Explain the following code:**
-**Vær opmærksom på at koden nedenunder er det tilføjet kommentarer på**
+**Vær opmærksom på at koden nedenunder er det tilføjet kommentarer på. Kommentarerne er der ikke i den origanle kodeeksempel**
 
 Forklaring på ErrorBoundary-komponentet:
 * Formål: Fange og håndtere fejl i children komponenterne, så applikationen ikke går ned.
