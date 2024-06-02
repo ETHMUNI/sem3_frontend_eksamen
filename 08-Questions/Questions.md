@@ -14,8 +14,8 @@
 
 ### Explain how the map function is used for rendering lists in React.
 1. Du har et array af data, som du vil vise i brugergrænsefladen.
-2. map-funktion: Du bruger map funktionen til at løbe gennem hvert element i arrayet og skabe en ny liste af React-komponenter.
-3. Rendere listen: Den nye liste af React-komponenter bliver derefter rendere i UI.
+2. Du bruger map funktionen til at løbe gennem hvert element i arrayet og skabe en ny liste af React-komponenter.
+3. Den nye liste af React-komponenter bliver derefter rendere i UI.
 
 Eksempel:
 ```
