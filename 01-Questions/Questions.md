@@ -1,12 +1,20 @@
 # **Question 1**
 
 ## **JS**
-### **What are higher-order functions in JavaScript? Give an example.**
+### What are higher-order functions in JavaScript and what are the benefits? Show some examples in your own code.
+* Higher-order functions i JavaScript er funktioner, der enten tager en eller flere funktioner som argumenter, eller returnerer en funktion som resultat
+* Javascript har nogen indbyggede higher-order functions, f.eks. map, filter og reduce.
+Vi bruger både filter og map funktionerne i UserRecipe.jsx.
+Linje 26 = filter
+Linje 39 = map.
 
 ## **REACT**
-### **What is a React component?**
-* Et React komponent er en genanvendelig kode der definerer, hvordan en del af brugergrænsefladen(UI) skal se ud og opfører sig. Hver komponent har typisk sin egen logik og state, og det
-    kan tage et parameter/argument kaldet props. Et React komponent returnere elementer, som beskriver, hvad der skal vises på skærmen.
+### What is the main concept of an React component and what are its different building blocks?
+* Et React komponent er en genanvendelig kode der definerer, hvordan en del af brugergrænsefladen(UI) skal se ud og opfører sig. Den kan f.eks. være en knap, tekstboks osv.
+Vigtige building blocks:
+* JSX
+* State
+* Props
 
     Eksempel på en React komponent:
   
@@ -17,7 +25,7 @@
       return <div>Hello!</div>
     }
 
-### **Explain the benefits of using components compared to how you would build a web application in vanilla javascript.**
+### Explain the benefits of using components compared to how you would build a web application in vanilla javascript.
 
 React Komponenter: 
    * Genanvendelige: F.eks. Hvis du laver en knap-komponent, kan du bruge den samme knap på forskellige sider eller dele af din app uden at kopiere og indsætte koden
@@ -33,11 +41,14 @@ Vanilla JavaScript:
 
 
 ## **Security/Routing/Styling**
-### **Explain what React Router is and its purpose in a React application.**
+### Explain what React-Router is and which problems does it solve?
 
 * React Router er et populært bibliotek til styring af routing i React-applikationer.
-* React Router gør det muligt at vise forskellige komponenter afhængigt af, hvilken URL brugeren besøger
-* Det betyder, at når brugeren skriver en bestemt URL i adresselinjen viser React Router den rigtige komponent eller side uden at genindlæse siden.
+* React Router gør det muligt at vise forskellige komponenter afhængigt af, hvilken URL brugeren besøger. Det betyder, at når brugeren skriver en bestemt URL i adresselinjen viser React Router den rigtige komponent eller side uden at genindlæse siden.
+
+Problemer det som Router løser:
+* Navigering mellem sider: Uden React Router skal du bruge traditionelle links, der genindlæser hele siden, når du klikker på dem. React Router gør det muligt at skifte mellem sider hurtigt og uden genindlæsning.
+* Dynamiske ruter: Dynamiske ruter: Det giver dig mulighed for at oprette ruter, der kan ændre sig baseret på brugerinput eller data. For eksempel kan du have en side for hver bruger på dit website som `www.dinside.com/brugere/123`, hvor "123" er et bruger-ID.
     
 
 ### **Show an example of how routing works in React.**
@@ -50,5 +61,8 @@ Vanilla JavaScript:
 * `<Routes>` - Dette er en container for alle routes i appen. Den definerer, hvilke komponenter der skal vises for forskellige URL'er.
 * isAuthenticated er en prop som angiver om brugeren er logget ind eller ej
 * Protected Routes beskytter bestemte routes. Kun brugerer som er logget ind kan få adgang til disse routes.
+* path:
+    * Matcher URL'en: path fortæller React Router, hvilken URL-sti der skal matche for at vise en bestemt komponent.
+    * Viser den rigtige komponent: Når URL'en matcher path, viser React Router den komponent, der er angivet for den rute.
     
     
