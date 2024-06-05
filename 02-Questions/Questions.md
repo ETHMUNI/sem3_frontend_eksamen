@@ -2,11 +2,20 @@
 
 ## **JS**
 
-### **What is a callback function in JavaScript and when would you use one?**
+### Show some examples where you used a callback function and explain why you used them.
+Eksempelet er fra UserRecipes.jsx(linje 11): UseEffect hooket. - NOTE: Der er flere callback funktions i denne jsx. Både filter og map functions bruger callback.
 
+Hvorfor jeg brugte callback function:
+* Jeg brugte en callback-funktion inde i useEffect for at køre koden, når komponenten mountes (dvs. vises på skærmen). Dette gør det muligt at hente opskrifter, når komponenten indlæses
+* Jeg brugte en callback-funktion inde i filter-metoden: `recipe => recipe.id !== id`. Denne funktion køres for hvert element i recipes-arrayet for at filtrere opskrifterne og fjerne den, der har det slettede ID. Dette opdaterer listen over opskrifter efter sletning
+
+* Generalt ville man normalt bruge callback-funktioner, når man har at gøre med dynamisk data. Samt ville man også bruge callback functions når man henter data med asynkroniske operationer.
+
+Forklaring om callback functions:
 * En callback-funktion er en funktion, der sendes som et argument til en anden funktion og kaldes senere, når en bestemt opgave er færdig
 * Man ville bruge en callback funktion, når man har brug for at udføre en opgave asynkront, det vil sige, når en opgave tager tid at fuldføre 
 For eksempel:
+  * Data
   * Netværksanmodninger
   * Filoperationer
   * Timers
@@ -17,27 +26,36 @@ For eksempel:
 ### **What is JSX? Provide an example.**
     
 * JSX står for JavaScript XML. Det er en udvidelse af JavaScript, der tillader os at skrive HTML-lignende kode direkte i JavaScript-filer
-* Du kan tage et hvert .jsx fil som eksempel fra eksamensprojektet eller brug dette:
+* Eksemplet er fra UserRecipes.jsx(linje 34 til linje 55).
 
-```
-import React from 'react';
+* Her bruger vi både `<h2>`, `<ul>`, `<li>`, `<p>` osv.
 
-function MyComponent() {
-  return (
-      <>
-      <h1>Hello, world!</h1>
-      <p>This is a JSX example.</p>
-      </>
-  )
-}
-```
+### How would you write JSX if you only used HTML and Javascript?
 
-### **How does JSX differ from HTML?**
-
-* I JSX bruger vi className i stedet for class, onClick i stedet onclick osv.
-* JSX-koden er indlejret i en JavaScript-funktion
-* JSX tillader at blande JavaScript og HTML-lignende syntaks.
+* For at skrive JSX uden at bruge JSX (kun med HTML og JavaScript) skal du dynamisk skabe og manipulere DOM-elementer ved hjælp af JavaScript. Dette involverer at bruge metoder såsom `document.createElement`, `document.addEventListener`, `document.getElementById`, `element.appendChild`, og `element.textContent` for at bygge og opdatere HTML-strukturen
 
 ## **Security/Routing/Styling**
-### **Describe the purpose of flexbox and grid in css, and show some examples of what can be
-achieved by applying them.**
+
+### **Describe the purpose of flexbox and grid in css, and show some examples of what can be achieved by applying them.**
+* Flexbox og Grid i CSS bruges til at skabe layout på websider. De gør det nemt at arrangere og justere elementer på en fleksibel og responsiv måde
+
+Flexbox: 
+* Formål: At arrangere elementer i en enkelt dimension, enten som en række (vandret) eller kolonne (lodret).
+* Hvornår man bruger det: Når du vil placere og justere elementer på en fleksibel måde i én retning, f.eks. at centrere indhold eller skabe jævnt fordelte knapper.
+
+Grid: 
+* Formål: At arrangere elementer i to dimensioner, både rækker og kolonner.
+* Hvornår man bruger det: Når du vil skabe komplekse layouts med både rækker og kolonner, f.eks. et komplet side-layout med header, sidebar, main content og footer
+
+For eksempel brug RecipeDetail.jsx
+* I dette eksempel bruges Flexbox til at centrere indholdet og arrangere kommentarer i en lodret kolonne.
+
+1. comments(linje 45):
+* display: 'flex': Dette aktiverer Flexbox-layout for comments.
+* flexDirection: 'column': Dette arrangerer kommentarer i en lodret kolonne.
+* alignItems: 'center': Dette centrerer kommentarerne horisontalt.
+
+2. commentHeader(linje 77):
+* display: 'flex': Dette aktiverer Flexbox-layout for commentHeader.
+* justifyContent: 'space-between': Dette placerer elementerne (brugernavn og slet-knap) med maksimal plads mellem dem.
+* alignItems: 'center': Dette centrerer elementerne vertikalt.
