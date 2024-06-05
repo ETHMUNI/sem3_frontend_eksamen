@@ -3,13 +3,14 @@
 ## **JS**
 ### What are higher-order functions in JavaScript and what are the benefits? Show some examples in your own code.
 * Higher-order functions i JavaScript er funktioner, der enten tager en eller flere funktioner som argumenter, eller returnerer en funktion som resultat
-* Javascript har nogen indbyggede higher-order functions, f.eks. map, filter og reduce.
+* Javascript har nogen indbyggede higher-order functions, f.eks. map, filter og reduce(Minder meget om Java Streams).
 
 Vi bruger både filter og map funktionerne i UserRecipe.jsx.
 
 I filter function(linje 26): `setRecipes(recipes.filter(recipe => recipe.id !== id));`
-* recipes er en liste (array) af opskrifter.
+* recipes er et array af opskrifter.
 * filter er en higher-order function, der tager en callback-funktion som argument
+    * En callback-funktion er en funktion, der sendes som argument til en anden funktion og udføres efter den første funktion er færdig.
 * For hvert recipe tjekker callback-funktionen, om recipe.id er forskellig fra id (ID'et på den opskrift, der skal slettes)
 * Hvis betingelsen recipe.id !== id er sand (dvs. opskriften ikke har det ID, der skal slettes), inkluderes recipe i det nye array
 * Hvis betingelsen er falsk (dvs. opskriften har det ID, der skal slettes), inkluderes recipe ikke i det nye array
@@ -26,18 +27,9 @@ I map functionen(linje 39) `recipes.map((recipe) => (` - NOTE: Forklar om koden 
 ### What is the main concept of an React component and what are its different building blocks?
 * Et React komponent er en genanvendelig kode der definerer, hvordan en del af brugergrænsefladen(UI) skal se ud og opfører sig. Den kan f.eks. være en knap, tekstboks osv.
 Vigtige building blocks:
-* JSX
-* State
-* Props
-
-    Eksempel på en React komponent:
-  
-    ```
-    import React from 'react'
-    
-    function MyComponent() {
-      return <div>Hello!</div>
-    }
+* JSX: En syntaks, der ligner HTML, men bruges i JavaScript til at beskrive, hvordan UI'en skal se ud
+* State: data i komponenten, som kan ændres over tid og påvirker, hvordan komponenten renderes
+* Props: Data, der sendes til komponenten udefra(parent til children komponent), hvilket gør det muligt at tilpasse og genbruge komponenten med forskellige værdier.
 
 ### Explain the benefits of using components compared to how you would build a web application in vanilla javascript.
 
