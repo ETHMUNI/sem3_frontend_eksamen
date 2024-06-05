@@ -1,12 +1,22 @@
 # **Question 3**
 
 ## **JS**
-### **What are the purposes and differences between the package.json and package-lock.json files?**
+### What is the purpose of the package.json file and what can you do with it?
 
 package.json
 Formål:
    * En liste over de værktøjer og biblioteker, dit projekt har brug for.
    * Bruges til at fortælle hvilke packages og scripts der skal installeres, når nogen bruger dit projekt.
+
+Brug:
+* package.json beskriver dit projekt.
+* Den holder styr på nødvendige biblioteker (dependencies).
+* Den definerer scripts til almindelige kommandoer.
+* Den hjælper med at sikre konsistens og gør det nemt at dele og installere dit projekt.
+
+* Med package.json kan du hurtigt installere alle nødvendige biblioteker med én kommando `npm install`, og andre udviklere kan forstå og arbejde med dit projekt lettere
+
+Ekstra:
 
 package-lock.json
 Formål: 
@@ -17,34 +27,30 @@ Forklaret i "ikke-kode" termer:
    * Se package.json som en indkøbsliste med fleksible valg, mens package-lock.json er som en kvittering, der viser præcis, hvad der blev købt
 
 ## **REACT**
-### **Describe the purpose of props in React.**
-* Props (properties) i React er en måde at sende data fra en "parent" komponent til en "child" komponent.
-* Gør det muligt at tilpasse "child" komponenter med forskellige data. F.eks: 
-Parent-Component:
-```
-function App() {
-      return (
-        <div>
-          <Hilsen navn="Alice" />
-          <Hilsen navn="Bob" />
-        </div>
-      );
-    }
-```
-Child-Component:
-```   
-function Hilsen(props) {
-    return <h1>Hej, {props.navn}!</h1>;
-    }
-```
-Resultat:
-Hej, Alice!
-Hej, Bob!
+### Show and describe the purpose of props including children
+* Props (properties) i React er en måde at sende data fra en "parent" komponent til en "children" komponent.
+* Gør det muligt at tilpasse "child" komponenter med forskellige data.
+
+For et eksempel brug Navbar.jsx(children) og App.jsx(parent)
+
+Navbar.jsx:
+* Props bliver brugt til at sende isAuthenticated til NavBar-komponenten(linje 8) `function NavigationBar({ isAuthenticated }) {`
+* isAuthenticated-proppen bruges til at betinge rendering af forskellige elementer i navigationen
+* i linje 29, 30 & 31: bliver linkene til "My Profile", "Add Recipe" og "Admin" kun vises, hvis isAuthenticated er true (dvs. brugeren er logget ind)
+
+App.jsx:
+* isAuthenticated kommer fra vores parent komponent(App.jsx). I App.jsx defineres isAuthenticated som en state-variabel og sendes derefter som prop til NavBar.jsx
+* useState bruges til at oprette isAuthenticated, der initialiseres baseret på, om der er en token i localStorage
+* isAuthenticated sendes som en prop til NavBar komponenten. Dette betyder, at NavBar komponenten kan bruge denne prop til at afgøre, hvilke elementer der skal vises, baseret på om brugeren er autentificeret eller ej.
 
 
-### **Explain the role of state in a React component.**
-    
+### Show and explain the role of state in a React component.
 * State er en måde at holde styr på data, der kan ændre sig. Når state ændres, opdateres komponenten automatisk, så den altid viser de nyeste data
+
+For et eksempel brug App.jsx:
+* Initialisering af state: isAuthenticated er en state variabel, der starter med værdien true, hvis der er en token i localStorage, ellers false. setIsAuthenticated er en funktion, der bruges til at opdatere isAuthenticated
+* Opdatering af state: handleLogout funktionen opdaterer isAuthenticated til false og rydder localStorage, når brugeren logger ud.
+* Brug af state i komponent: isAuthenticated sendes som en prop til NavigationBar-komponenten, så den kan vise forskellige elementer baseret på, om brugeren er logget ind eller ej(linje 32)
 
 ## **Security/Routing/Styling**
 ### **Describe conceptually how we deploy a React frontend application to a docker container on a virtual machine.**
