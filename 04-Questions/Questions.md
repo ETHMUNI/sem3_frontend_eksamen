@@ -1,6 +1,6 @@
 # **Question 4**
 ## **JS**
-### **Explain the concept of promises in JavaScript. How do they differ from callbacks?**
+### Show and explain the concept of promises in JavaScript.
 * Et Promise i JavaScript er en måde at håndtere asynkrone operationer på. Det er som et løfte om, at en opgave vil blive færdig i fremtiden, enten med succes (løftet opfyldes) eller med en fejl (løftet brydes)
 * Der er 3 slags tilstande et Promise kan være i:
   * Pending: Løftet er ikke opfyldt eller brudt endnu. Det venter på at blive færdiggjort.
@@ -60,6 +60,10 @@ export default MyComponent;
  
 ```
 ## **Security/Routing/Styling**
+### What is the purpose of Træfik?
+
+
+
 ### **Describe some important design principles when developing a website that should be working well on mobile, tablet, as well as desktop browsers.**
 Responsivt Design:
 * Brug procentdele i stedet for faste pixelværdier for at sikre, at elementer skaleres korrekt i CSS
