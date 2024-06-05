@@ -62,6 +62,13 @@ export default MyComponent;
 ## **Security/Routing/Styling**
 ### What is the purpose of Træfik?
 
+Traefik(Reverse Proxy - Anmodninger fra Server til Klient):
+* Traefik styrer netværkstrafik effektivt og sikrer, at applikationerne kører problemfrit og sikkert.
+* Finder automatisk systemer: Automatisk opdager og konfigurerer kørende applikationer (f.eks. Docker containere).
+* SSL management: Håndterer SSL-certifikater for sikre forbindelser.
+* Trafik Routing: Sender anmodninger fra brugere til de rigtige systemer
+* Load balancing: Fordeler trafik jævnt mellem servere for at optimere ydeevnen.
+
 
 
 ### **Describe some important design principles when developing a website that should be working well on mobile, tablet, as well as desktop browsers.**
