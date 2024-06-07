@@ -30,3 +30,16 @@ Eksempel i UserRecipe.jsx:
 
 ## Security/Routing/Styling
 ### Describe conceptually what HTTPS is and how we got it working on our deployed websites.
+* HTTPS står for HyperText Transfer Protocol Secure og sikrer, at data, der sendes mellem din webbrowser og en hjemmeside, er krypteret og beskyttet mod aflytning og manipulation. Det gør det ved at bruge SSL-certifikater.
+
+Alt sker i vores Docker Compose, acme.json og .env filer:
+Docker compose fil:
+* Vi opretter bl.a. en middleware for at omdirigere HTTP-trafik til HTTPS for alle services, hvilket sikrer, at alle forbindelser er sikre.
+* HTTPS håndteres på vores deployede hjemmeside ved hjælp af Traefik(Reverse Proxy - klient til server). Dette setup sikrer, at alle HTTP-anmodninger omdirigeres til HTTPS, og at Traefik automatisk håndterer SSL-certifikater ved hjælp af Let's Encrypt. Det betyder at forbindelsen er krypteret og sikker, hvilket beskytter brugerens data
+
+acme.json:
+* Vi bruger acme filen til at kopierer Let's Encrypt certifikater lokalt for nem backup.
+* Ved brug af acme.json filen sørger vi for at træfik får persistens for vores SSL-certifikater
+
+env:
+* env filen indeholder konfigurationsdetaljer og credentials, der gør det muligt for Traefik at kommunikere med Let's Encrypt og DNS-udbydere for at anmode om certifikater.(bl.a. email, acme_storage og provider(digitalocean)).
