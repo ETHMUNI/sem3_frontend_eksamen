@@ -6,7 +6,7 @@
 Du kan vise brugen af window i consolen i browersen. window har forskellig funktioner du kan kalde. Her er nogen eksempler:
 * `window.alert("du er nu logget ind");`
 * `window.open("food-recipe, "_blank);"`
-  * `_blank` åbner et nyt vindue. Hvis den åbne url'en på samme side brug `_self`.
+  * `_blank` åbner et nyt vindue. Hvis den skal åbne url'en på samme side brug `_self`.
 * `window.scrollTo(0, 0);`
 
 Forklaringer:
