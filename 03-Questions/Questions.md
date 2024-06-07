@@ -62,6 +62,7 @@ Part 1: Forberedelse og Backend
   2. Opsæt en DigitalOcean droplet med Docker og Docker Compose.
 
 Part 2: Frontend Deployment
+
   3. Opret en Dockerfil for frontend, byg image, og brug GitHub Actions til at pushe til Docker Hub.
   4. Opsæt en Docker Compose fil på droplet for at køre frontend og backend services.
 
