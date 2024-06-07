@@ -38,3 +38,19 @@ UncontrolledAddRecipe.jsx:
 ## Security/Routing/Styling
 
 ### Show and explain an example of sub-routing.
+* Sub-routing betyder at have ruter inden i andre ruter. Dette er nyttigt, når du har en hovedrute og flere undersektioner, du vil navigere mellem inden for denne hovedrute.
+
+* For eksempel brug App.jsx og Dashboard.jsx(eksempel:
+* Originalt har vi ikke sub-routing inde i App.jsx, jeg har defor tilføjet et dashboard eksempel på hvordan dette kan se ud.
+
+App.jsx:
+* Vi har tilføjet en rute til Dashboard komponenten: `<Route path="/dashboard/*" element={<Dashboard />} />`.
+
+Dashboard.jsx:
+* Dashboard komponenten indeholder sin egen navigation med links til Profile og Settings.
+* Inden for Dashboard komponenten bruger vi Routes og Route til at definere sub-ruterne.
+
+Sub-routing:
+* Dashboard komponenten viser Profile og Settings komponenterne afhængigt af den aktuelle sub-rute.
+* Links i Dashboard navigerer til Profile og Settings sub-ruterne ved hjælp af Link komponenten.
+
