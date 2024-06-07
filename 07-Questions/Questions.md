@@ -2,55 +2,41 @@
 
 ## **JS**
 
-### **What is the purpose of the window object in JavaScript?**
+### Show an example of using the window object in JavaScript?
+Du kan vise brugen af window i consolen i browersen. window har forskellig funktioner du kan kalde. Her er nogen eksempler:
+* `window.alert("du er nu logget ind");`
+* `window.open("food-recipe, "_blank);"`
+  * `_blank` åbner et nyt vindue. Hvis den åbne url'en på samme side brug `_self`.
+* `window.scrollTo(0, 0);`
 
+Forklaringer:
 * Formålet med window-objektet i JavaScript er at repræsentere browserens vindue, hvor websiden vises. Det fungerer som den øverste container for alle andre objekter i en webside, såsom dokumentet (websiden selv), historik, placering (URL), browserens historik, osv.
 * window er det øverste niveau objekt i en webside. Det betyder, at alle andre objekter, som f.eks. document, location, og history, er en del af window-objektet
+* Funktioner som localStorage, fetch, sessionStorage er også en del af window objektet.
 
 ## **REACT**
 
-### How are events handled in React compared to vanilla javascript?
-Vanilla Javascript:
-* Tilføjer event listeners med `addEventListener` og bruger små bogstaver med f.eks. "click"
-
-Eksempel:
-```
-<button id="minKnap">Klik mig</button>
-<script>
-  document.getElementById("minKnap").addEventListener("click", function() {
-    alert("Knap klikket!");
-  });
-</script>
+### Show and describe event handling in React (with reference to the SyntheticEvent object).
+I addRecipe.jsx bruger vi SyntheticEvent flere steder i vores event handlers
+Et af eksempel er vores handleChange event(linje 24); 
 
 ```
-
-React:
-* Håndterer events i JSX med camelCase (onClick) og bruger funktionsreferencer
-
-Eksempel:
-
+const handleChange = (e) => {
+    setRecipe({ ...recipe, [e.target.id]: e.target.value });
+  };
 ```
-import React from 'react';
-
-function MinKomponent() {
-  function handleClick() {
-    alert("Knap klikket!");
-  }
-
-  return (
-    <button onClick={handleClick}>Klik mig</button>
-  );
-}
-
-export default MinKomponent;
-```
-* I React er eventhåndtering integreret i komponentens struktur, hvilket gør det mere organiseret og lettere at vedligeholde sammenlignet med vanilla JavaScript
+* `handleChange` er en event handler funktion, som bliver kaldt, når en ændring sker i et input felt
+* `e` er et SyntheticEvent objekt, som React genererer.
+* `e.target` refererer til det DOM element, som udløste eventen. I dette tilfælde er det input feltet, der blev ændret.
+* `e.target.id` giver id attributten af det input element, som blev ændret. Dette id bruges til at identificere hvilket felt der blev ændret, f.eks. "name", "category", "ingredients" osv.
+* `e.target.value` indeholder den nye værdi af input feltet. Dette er den værdi, som brugeren har indtastet
+* Bemærk at der bruges spread operator(...recipes). Dette skaber en kopi af det nuværende recipe objekt. Dette sikrer, at vi ikke direkte muterer det eksisterende state, hvilket er vigtigt i React for at bevare state-håndteringen korrekt
 
 ### Show examples of how to handle form submit events, and how to handle input change events.
 Kig på addRecipes.jsx:
 
 Form submit events:
-* Form submit events håndteres med en handleSubmit funktion, der kaldes, når brugeren trykker på "submit" knappen. I koden ovenfor er handleSubmit defineret på linje 31 og bruges på linje 53.
+* Form submit events håndteres med en handleSubmit funktion, der kaldes, når brugeren trykker på "submit" knappen. I koden er handleSubmit defineret på linje 31 og bruges på linje 53.
 * Når brugeren indsender formularen, kaldes handleSubmit, tilføjer opskriften og navigere til en anden side
 Eksempel:
 ```
@@ -85,10 +71,13 @@ const handleChange = (e) => {
 };
 ```
 
-
 ## Security/Routing/Styling
 
-### Describe and show how we log in a user in React with JWT.
+### Describe and show the process og login using JWT. What problem does it solve?
+
+* Hvilket problem løses der med JWT?
+* Sikkerhed: JWT kan signeres og krypteres, hvilket gør det vanskeligt for uautoriserede parter at ændre eller læse tokenet. Derudover kan tokenet konfigureres til at udløbe efter en bestemt tid, hvilket begrænser virkningen af et kompromitteret token.
+*  Single Sign-On (SSO): JWT gør det nemt at implementere SSO, fordi tokenet kan bæres mellem forskellige services og domæner, der alle kan stole på den samme signatur til at verificere tokenet.
 
 1. Brugeren indtaster deres email og adgangskode
 2. Sender en anmodning af brugeren oplysningerne til serveren
