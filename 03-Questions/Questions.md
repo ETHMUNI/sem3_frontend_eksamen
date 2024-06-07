@@ -67,6 +67,7 @@ Part 2: Frontend Deployment
   4. Opsæt en Docker Compose fil på droplet for at køre frontend og backend services.
 
 Part 3: Traefik Setup
+
   5. Konfigurer Traefik som reverse proxy på droplet.
   6. Opret nødvendige filer og mapper (acme.json, .env, docker-compose.yml).
   7. Start services med docker-compose up -d.
