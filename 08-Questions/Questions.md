@@ -2,9 +2,11 @@
 
 ## JS
 
-### Explain the concept of event bubbling in JavaScript.
+### Show and explain the concept of event bubbling in JavaScript.
 * Event bubbling: En event, som f.eks. et klik, starter på det element, hvor den blev udløst, og "bobler" derefter op gennem forældre- og forfædre-elementerne.
 * En fordel kunne være at man gør det muligt at håndterer events på et højere niveau i DOM'en, hvilket kan resulterer i mindre kode
+
+
 
 ## REACT
 
