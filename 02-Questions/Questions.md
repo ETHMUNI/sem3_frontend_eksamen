@@ -49,11 +49,13 @@ Grid:
 
 For eksempel brug EditRecipes.jsx:
 
-I Container-komponenten bruger vi Flexbox til at centrere indholdet både lodret og vandret
+* I Container-komponenten bruger vi Flexbox til at centrere indholdet både lodret og vandret
+```
 const Container = styled.div`
     display: flex;                /* Gør containeren til en flex-container */
     justify-content: center;      /* Centrerer indholdet (FormBox) på den vandret akse  */
     align-items: center;          /* Centrerer indholdet (FormBox) på den lodret akse */
     height: 100vh;                /* Giver containeren en højde på 100% af viewportens højde */
 `;
-Forestil dig skærmen som en stor boks (Container), og indeni denne boks har du en mindre boks (FormBox). Ved at bruge justify-content: center; og align-items: center;, vil FormBox blive placeret præcist i midten af Container, både vandret og lodret
+```
+* Forestil dig skærmen som en stor boks (Container), og indeni denne boks har du en mindre boks (FormBox). Ved at bruge justify-content: center; og align-items: center;, vil FormBox blive placeret præcist i midten af Container, både vandret og lodret
