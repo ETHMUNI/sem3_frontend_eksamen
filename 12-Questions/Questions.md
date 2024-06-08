@@ -1,10 +1,13 @@
-JS
-. Explain the concept of promises in JavaScript. How do they differ from callbacks?
+# Question 12
 
-REACT
-. Describe how conditional rendering is achieved in React.
-. Provide an example of using the ternary operator for conditional rendering.
+## JS
 
-Security/Routing/Styling
-. Describe the purpose of flexbox and grid in css, and show some examples of what can be
-achieved by applying them.
+### Show and explain the concept of promises in JavaScript.
+
+## REACT
+
+### Provide examples for different ways of doing conditional rendering.
+
+## Security/Routing/Styling
+
+### Describe the purpose of flexbox and grid in css, and show some examples of what can be achieved by applying them.
