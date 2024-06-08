@@ -55,3 +55,19 @@ For et eksempel brug App.jsx:
 ## Security/Routing/Styling
 
 ### Describe and show the process og login using JWT. What problem does it solve?
+
+* Hvilket problem løses der med JWT?
+* Sikkerhed: JWT kan signeres og krypteres, hvilket gør det vanskeligt for uautoriserede parter at ændre eller læse tokenet. Derudover kan tokenet konfigureres til at udløbe efter en bestemt tid, hvilket begrænser virkningen af et kompromitteret token.
+*  Single Sign-On (SSO): JWT gør det nemt at implementere SSO, fordi tokenet kan bæres mellem forskellige services og domæner, der alle kan stole på den samme signatur til at verificere tokenet.
+
+1. Brugeren indtaster deres email og adgangskode
+2. Sender en anmodning af brugeren oplysningerne til serveren
+3. Hvis brugeren godkendes, sender serveren et JWT(JSON Web Token) tilbage
+4. Opbevar JWT'et i vores local storage for at bruge det til autentificeret HTTP-anmodninger til vores endpoints fremover
+5. Inkluder JWT i vores headers på fremtidige HTTP-anmodninger for at få adgang til beskyttede API'er, såsom vores endpoints.
+
+Ekstra:
+* Headers: I vores tilfælde i adminapi.js bruger vi kun Request headers og ingen Response headers.
+  * `'Authorization': Bearer ${token}'` - bruges i alle funktioner til at sende JWT for autentificering.
+  * `'Content-Type': 'application/json'` - bruges i getAllUsers, deleteUser, addRoleToUser, deleteComment, og deleteRecipe til at angive, at body'en er i JSON-format
+  * `'Cache-Control': 'no-cache'` - bruges i getAllUsers til at instruere serveren om ikke at cache anmodningen. Dette betyder, at du instruerer serveren om at sikre, at dataene er opdaterede og ikke blot sende en gammel, cachet version.
