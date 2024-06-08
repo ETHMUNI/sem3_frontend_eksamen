@@ -1,11 +1,14 @@
-Question 13
+# Question 13
 
-JS
-. What are higher-order functions in JavaScript? Give an example.
+## JS
 
-REACT
-. Describe the purpose of props in React.
-. Explain the role of state in a React component.
+### What are higher-order functions in JavaScript and what are the benefits? Show some examples in your own code
 
-Security/Routing/Styling
-. Describe and show how we log in a user in React with JWT.
+### REACT
+
+### Show and describe the purpose of props including children.
+### Show and explain the role of state in a React component.
+
+## Security/Routing/Styling
+
+### Describe and show the process og login using JWT. What problem does it solve?
