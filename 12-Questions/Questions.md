@@ -50,3 +50,25 @@ Grid:
 Formål: At arrangere elementer i to dimensioner, både rækker og kolonner.
 Hvornår man bruger det: Når du vil skabe komplekse layouts med både rækker og kolonner, f.eks. et komplet side-layout med header, sidebar, main content og footer
 
+* Flexbox og Grid i CSS bruges til at skabe layout på websider. De gør det nemt at arrangere og justere elementer på en fleksibel og responsiv måde
+
+Flexbox: 
+* Formål: At arrangere elementer i en enkelt dimension, enten som en række (vandret) eller kolonne (lodret).
+* Hvornår man bruger det: Når du vil placere og justere elementer på en fleksibel måde i én retning, f.eks. at centrere indhold eller skabe jævnt fordelte knapper.
+
+Grid: 
+* Formål: At arrangere elementer i to dimensioner, både rækker og kolonner.
+* Hvornår man bruger det: Når du vil skabe komplekse layouts med både rækker og kolonner, f.eks. et komplet side-layout med header, sidebar, main content og footer
+
+For eksempel brug EditRecipes.jsx:
+
+* I Container-komponenten bruger vi Flexbox til at centrere indholdet både lodret og vandret
+```
+const Container = styled.div`
+    display: flex;                /* Gør containeren til en flex-container */
+    justify-content: center;      /* Centrerer indholdet (FormBox) på den vandret akse  */
+    align-items: center;          /* Centrerer indholdet (FormBox) på den lodret akse */
+    height: 100vh;                /* Giver containeren en højde på 100% af viewportens højde */
+`;
+```
+* Forestil dig skærmen som en stor boks (Container), og indeni denne boks har du en mindre boks (FormBox). Ved at bruge justify-content: center; og align-items: center;, vil FormBox blive placeret præcist i midten af Container, både vandret og lodret
