@@ -39,3 +39,14 @@ Så, funktionen setFileLabel(file ? file.name : 'No file chosen') sørger for, a
 ## Security/Routing/Styling
 
 ### Describe the purpose of flexbox and grid in css, and show some examples of what can be achieved by applying them.
+
+Flexbox og Grid i CSS bruges til at skabe layout på websider. De gør det nemt at arrangere og justere elementer på en fleksibel og responsiv måde
+Flexbox:
+
+Formål: At arrangere elementer i en enkelt dimension, enten som en række (vandret) eller kolonne (lodret).
+Hvornår man bruger det: Når du vil placere og justere elementer på en fleksibel måde i én retning, f.eks. at centrere indhold eller skabe jævnt fordelte knapper.
+Grid:
+
+Formål: At arrangere elementer i to dimensioner, både rækker og kolonner.
+Hvornår man bruger det: Når du vil skabe komplekse layouts med både rækker og kolonner, f.eks. et komplet side-layout med header, sidebar, main content og footer
+
