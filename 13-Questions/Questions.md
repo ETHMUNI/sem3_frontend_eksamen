@@ -27,8 +27,30 @@ I map functionen(linje 39) `recipes.map((recipe) => (` - NOTE: Forklar om koden 
 
 ### REACT
 
-### Show and describe the purpose of props including children.
+### Show and describe the purpose of props including children
+* Props (properties) i React er en måde at sende data fra en "parent" komponent til en "children" komponent.
+* Gør det muligt at tilpasse "child" komponenter med forskellige data.
+
+For et eksempel brug Navbar.jsx(children) og App.jsx(parent)
+
+Navbar.jsx:
+* Props bliver brugt til at sende isAuthenticated til NavBar-komponenten(linje 8) `function NavigationBar({ isAuthenticated }) {`
+* isAuthenticated-proppen bruges til at betinge rendering af forskellige elementer i navigationen
+* i linje 29, 30 & 31: bliver linkene til "My Profile", "Add Recipe" og "Admin" kun vises, hvis isAuthenticated er true (dvs. brugeren er logget ind)
+
+App.jsx:
+* isAuthenticated kommer fra vores parent komponent(App.jsx). I App.jsx defineres isAuthenticated som en state-variabel og sendes derefter som prop til NavBar.jsx
+* useState bruges til at oprette isAuthenticated, der initialiseres baseret på, om der er en token i localStorage
+* isAuthenticated sendes som en prop til NavBar komponenten. Dette betyder, at NavBar komponenten kan bruge denne prop til at afgøre, hvilke elementer der skal vises, baseret på om brugeren er autentificeret eller ej.
+
+
 ### Show and explain the role of state in a React component.
+* State er en måde at holde styr på data, der kan ændre sig. Når state ændres, opdateres komponenten automatisk, så den altid viser de nyeste data
+
+For et eksempel brug App.jsx:
+* Initialisering af state: isAuthenticated er en state variabel, der starter med værdien true, hvis der er en token i localStorage, ellers false. setIsAuthenticated er en funktion, der bruges til at opdatere isAuthenticated
+* Opdatering af state: handleLogout funktionen opdaterer isAuthenticated til false og rydder localStorage, når brugeren logger ud.
+* Brug af state i komponent: isAuthenticated sendes som en prop til NavigationBar-komponenten, så den kan vise forskellige elementer baseret på, om brugeren er logget ind eller ej(linje 32)
 
 ## Security/Routing/Styling
 
