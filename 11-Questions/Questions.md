@@ -57,7 +57,8 @@ const Container = styled.div`
     align-items: center;          /* Centrerer indholdet (FormBox) på den lodret akse */
     height: 100vh;                /* Giver containeren en højde på 100% af viewportens højde */
 `;
+```
 
 * Forestil dig skærmen som en stor boks (Container), og indeni denne boks har du en mindre boks (FormBox). Ved at bruge justify-content: center; og align-items: center;, vil FormBox blive placeret præcist i midten af Container, både vandret og lodret
 
-```
+
