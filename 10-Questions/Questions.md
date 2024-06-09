@@ -19,9 +19,10 @@ For et eksempel brug addRecipe.jsx:
 ### What are React Hooks? Provide examples of at least two built-in hooks.
 
 Forklaringer:
-* Hooks gør det muligt at bruge React-funktioner som state og sideeffekter i funktionskomponenter. useState holder styr på data (f.eks. en liste af opskrifter), og useEffect udfører handlinger, når komponenten indlæses eller ændres (f.eks. henter data fra en server)
-* Før Hooks blev introduceret i React 16.8, kunne man kun bruge state og livscyklusmetoder i klassekomponenter
 * Hooks gør det lettere at dele logik mellem komponenter og gør koden mere læsbar og nemmere at vedligeholde
+* * Før Hooks blev introduceret i React 16.8, kunne man kun bruge state og livscyklusmetoder i klassekomponenter
+* Hooks gør det muligt at bruge React-funktioner som state og sideeffekter i funktionskomponenter. useState holder styr på data (f.eks. en liste af opskrifter), og useEffect udfører handlinger, når komponenten indlæses eller ændres (f.eks. henter data fra en server)
+
 
 For eksempel brug UserRecipe.jsx:
 
