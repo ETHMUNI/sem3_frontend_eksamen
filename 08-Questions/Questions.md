@@ -38,7 +38,7 @@ Eksempel i UserRecipe.jsx:
 Alt sker i vores Docker Compose, acme.json og .env filer:
 Docker compose fil:
 * Vi opretter bl.a. en middleware for at omdirigere HTTP-trafik til HTTPS for alle services, hvilket sikrer, at alle forbindelser er sikre.
-* HTTPS håndteres på vores deployede hjemmeside ved hjælp af Traefik(Reverse Proxy - klient til server). Dette setup sikrer, at alle HTTP-anmodninger omdirigeres til HTTPS, og at Traefik automatisk håndterer SSL-certifikater ved hjælp af Let's Encrypt. Det betyder at forbindelsen er krypteret og sikker, hvilket beskytter brugerens data
+* HTTPS håndteres på vores deployede hjemmeside ved hjælp af Traefik(Reverse Proxy). Dette setup sikrer, at alle HTTP-anmodninger omdirigeres til HTTPS, og at Traefik automatisk håndterer SSL-certifikater ved hjælp af Let's Encrypt. Det betyder at forbindelsen er krypteret og sikker, hvilket beskytter brugerens data
 
 acme.json:
 * Vi bruger acme filen til at kopierer Let's Encrypt certifikater lokalt for nem backup.
