@@ -29,7 +29,7 @@ Eksempel i UserRecipe.jsx:
   
 * Oprette Liste Elementer: For hver recipe i listen, opretter vi et li element med indholdet fra recipe.
   
-* Tilføje Unik Key(linje 40): Hvert <li> element får en unik key baseret på recipe.id
+* Tilføje Unik Key(linje 40): Hvert li element får en unik key baseret på recipe.id
 
 ## Security/Routing/Styling
 ### Describe conceptually what HTTPS is and how we got it working on our deployed websites.
