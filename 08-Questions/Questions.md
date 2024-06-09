@@ -25,9 +25,9 @@ Forklaring om hvordan map funktionen virker:
 Eksempel i UserRecipe.jsx:
 * Tjek for Liste(linje 38): Vi tjekker først, om recipes er en liste og om den har nogen elementer `(Array.isArray(recipes) && recipes.length > 0)`
   
-* Gennemgå Liste(linje 39): Hvis betingelsen er true, bruger vi map funktionen til at gennemgå hvert recipe (opskrift) i recipes listen.
+* Gennemgå Liste(linje 39): Hvis betingelsen er true, bruger vi map funktionen til at gennemgå hvert recipe i recipes listen.
   
-* Oprette Liste Elementer: For hver recipe i listen, opretter vi et <li> element med indholdet fra recipe.
+* Oprette Liste Elementer: For hver recipe i listen, opretter vi et li element med indholdet fra recipe.
   
 * Tilføje Unik Key(linje 40): Hvert <li> element får en unik key baseret på recipe.id
 
